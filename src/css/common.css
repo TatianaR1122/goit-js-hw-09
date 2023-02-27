@@ -19,26 +19,54 @@ img {
 
 .btn-block {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   justify-content: center;
   text-align: center;
-  margin: 25% auto;
+  margin: 10% auto;
+}
+
+.btn-start {
+  font-size: 40px;
+}
+
+.btn-stop {
+  font-size: 40px;
 }
 
 .timer {
-  padding-top: 30px;
   display: flex;
-  gap: 25px;
-}
-.field {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 48px;
+  margin-top: 48px;
 }
+
+.field {
+  position: relative;
+  text-align: center;
+  background-color: #fafafa;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.field:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  font-size: 48px;
+  right: -30px;
+  top: 40px;
+}
+
+span {
+  display: block;
+}
+
 .value {
-  font-size: 40px;
+  font-size: 72px;
+  color: #3a3a3a;
 }
+
 .label {
   text-transform: uppercase;
   font-size: 15px;
