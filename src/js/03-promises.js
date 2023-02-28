@@ -29,7 +29,8 @@ function onInputData(event) {
       })
       .catch(({ position, delay }) => {
         Notiflix.Notify.failure(`Rejected promise ${position} in ${delay}ms`);
-      });
+      })
+      .finally (() => refs.formEl.reset()),
     delay += step;
   }
 }
